@@ -1,6 +1,24 @@
 Valkey JSON 1.0 release notes
-========================
-================================================================================
+=============================
+
+Upgrade urgency levels:
+
+| Level    | Meaning                                                             |
+|----------|---------------------------------------------------------------------|
+| LOW      | No need to upgrade unless there are new features you want to use.   |
+| MODERATE | Program an upgrade of the server, but it's not urgent.              |
+| HIGH     | There is a critical bug that may affect a subset of users. Upgrade! |
+| CRITICAL | There is a critical bug affecting MOST USERS. Upgrade ASAP.         |
+| SECURITY | There are security fixes in the release.                            |
+
+Valkey JSON 1.0.3  -  Released Wed 19 August 2026
+-------------------------------------------------
+
+Upgrade urgency LOW: No need to upgrade unless there are new features you want to use.
+
+### Bug Fixes
+* Path-nesting-limit errors now suggest reducing document depth or increasing `json.max-path-limit` so clients can self-correct by @sarthakaggarwal97 (#3)
+
 Valkey JSON 1.0.2 - Released Mon 8 September 2025
 ================================================================================
 * Support building valkey-json on Clang/Apple (#69)
@@ -72,7 +90,8 @@ New configurations
 * Add support for the following configurations: json.max-document-size, json.max-path-limit
 
 ### Contributors
-* Roshan Khatri @roshkhatri
 * Joe Hu @joehu21
 * Nikhil Manglore @Nikhil-Manglore
+* Roshan Khatri @roshkhatri
+* Sarthak Aggarwal @sarthakaggarwal97
 * @zackcam
