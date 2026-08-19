@@ -71,6 +71,8 @@ New configurations
 ===========================
 * Add support for the following configurations: json.max-document-size, json.max-path-limit
 
-We appreciate the efforts of all who contributed code to this release!
-
-Roshan Khatri (roshkhatri), Joe Hu (joehu21), Nikhil Manglore (Nikhil-Manglore), zackcam
+### Contributors
+* Roshan Khatri @roshkhatri
+* Joe Hu @joehu21
+* Nikhil Manglore @Nikhil-Manglore
+* @zackcam
