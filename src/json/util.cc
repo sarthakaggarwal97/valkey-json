@@ -50,7 +50,7 @@ const char *jsonutil_code_to_message(JsonUtilCode code) {
         case JSONUTIL_DOCUMENT_SIZE_LIMIT_EXCEEDED:
             return "LIMIT Document size limit is exceeded";
         case JSONUTIL_DOCUMENT_PATH_LIMIT_EXCEEDED:
-            return "LIMIT Document path nesting limit is exceeded";
+            return "LIMIT Document path nesting limit is exceeded; reduce the document depth ""or increase json.max-path-limit";
         case JSONUTIL_PARSER_RECURSION_DEPTH_LIMIT_EXCEEDED:
             return "LIMIT Parser recursion depth is exceeded";
         case JSONUTIL_RECURSIVE_DESCENT_TOKEN_LIMIT_EXCEEDED:
